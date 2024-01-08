@@ -26,5 +26,5 @@ export default {
   
   
 <style lang="scss">
-@use './style/general.scss' as *;
+@use './styles/general.scss' as *;
 </style>
