@@ -22,8 +22,8 @@
             </nav>
         </section>
         <section class="jumbo">
-            <div>Give yourself permission</div>
-            <div>Relax, Revive & Rejuvenate</div>
+            <div class="fst-italic">Give yourself permission</div>
+            <div class="fs-1">Relax, Revive & Rejuvenate</div>
             <button>EXPLORE TREATMENTS</button>
         </section>
     </header>
@@ -65,5 +65,15 @@ section.jumbo {
     background-image: url(../assets/images/avada-spa-slider-image-1-new.jpg);
     width: 100%;
     height: 1000px;
+    color: white;
+    @include flex(column, center, center);
+
+    button {
+        padding: 1rem;
+        background-color: $icon-color;
+        border: none;
+        border-radius: 3rem;
+        color: white;
+    }
 }
 </style>
