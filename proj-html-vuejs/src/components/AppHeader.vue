@@ -3,11 +3,16 @@
         <section class="navigation">
             <nav>
                 <ul>
-                    <li><i class="fa-solid fa-house light-blue"></i> </li>
+                    <li><i class="fa-solid fa-house light-blue"></i></li>
                     <li><i class="fa-brands fa-pagelines"></i>
-                        <p>TREATMENTS</p>
+                        <span>TREATMENTS</span>
+                        <p>Face & Body</p>
                     </li>
-                    <li><i class="fa-solid fa-person"></i></li>
+                    <li><i class="fa-solid fa-person"></i>
+                        <span>ABOUT</span>
+                        <p>Our Team</p>
+                    </li>
+
                 </ul>
             </nav>
             <div class="logo">
@@ -15,15 +20,23 @@
             </div>
             <nav>
                 <ul>
-                    <li><i class="fa-solid fa-heart"></i></li>
-                    <li><i class="fa-solid fa-bookmark"></i></li>
+                    <li><i class="fa-solid fa-heart"></i>
+                        <span>JOURNAL</span>
+                        <p>Tips & Tricks</p>
+                    </li>
+                    <li><i class="fa-solid fa-bookmark"></i>
+                        <span>BOOK NOW</span>
+                        <p>Special Offers</p>
+                    </li>
                     <li><i class="fa-solid fa-plus"></i></li>
                 </ul>
             </nav>
         </section>
         <section class="jumbo">
-            <div class="fst-italic">Give yourself permission</div>
-            <div class="fs-1">Relax, Revive & Rejuvenate</div>
+            <div class="fst-italic">
+                <p>Give yourself permission</p>
+            </div>
+            <h1>Relax, Revive & Rejuvenate</h1>
             <button>EXPLORE TREATMENTS</button>
         </section>
     </header>
@@ -45,14 +58,28 @@ export default {
 section.navigation {
     @include flex(row, center, center);
 
+    p {
+        font-size: 10px;
+    }
+
     ul {
         @include flex(row, center, center);
         list-style-type: none;
 
         li {
             @include flex(column, center, center);
-            padding: 2rem;
+            padding: .4rem 4rem;
             color: $icon-color;
+            margin-top: 1rem;
+        }
+
+        li span,
+        p {
+            color: $grey-color;
+        }
+
+        li i {
+            font-size: 18px;
         }
     }
 }
@@ -67,13 +94,27 @@ section.jumbo {
     height: 1000px;
     color: white;
     @include flex(column, center, center);
+    font-family: $main-font;
+
+    div p {
+        font-size: 33px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
 
     button {
-        padding: 1rem;
+        padding: .6rem 2rem;
         background-color: $icon-color;
         border: none;
         border-radius: 3rem;
         color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button:hover {
+        background-color: #33A7B9
     }
 }
 </style>

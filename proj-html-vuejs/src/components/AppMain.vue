@@ -1,48 +1,82 @@
 <template>
-    <section class="experiences">
-        <h1>Luxury Spa Experiences</h1>
-        <i class="fa-brands fa-envira fa-flip-horizontal"></i>
-        <p> Morbi pharetra, quam id consequat imperdiet, lectus est tincidunt massa, eu posuere leo nibh non fermentum</p>
-        <hr>
-        <p>Vestibulum ne velit ante. Praesent dignissim interdum est, in lacinia elit pretium nec. Aliquam erat volutpat.
-            Fusce laoreet mi leo. Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium nec.
-            Aliquam erat volutpat. Fusce laoreet mi leo.
-        </p>
-        <button>OUR APPROACH</button>
-    </section>
-    <section class="emoji-container">
-        <div class="emoji-start">
-            <i class="fa-solid fa-hands fa-flip-horizontal"></i>
-            <p>Massages</p>
-        </div>
-        <div class="emoji-end">
-            <i class="fa-regular fa-face-smile"></i>
-            <p>Therapy</p>
-        </div>
-        <div class="emoji-start">
-            <i class="fa-solid fa-heart"></i>
-            <p>Relaxing</p>
-        </div>
-        <div class="emoji-end">
-            <i class="fa-regular fa-moon"></i>
-            <p>Meditation</p>
-        </div>
-        <div class="emoji-start">
-            <i class="fa-regular fa-snowflake"></i>
-            <p>Natural Beauty</p>
-        </div>
-    </section>
-    <section class="treatments-container">
-        <div class="card">
-            <img class="card-img" src="../assets/images/face_and_body_treatments-new.jpg" alt="face-and-body-treatments">
-        </div>
-        <div class="treatments-plan">
-            <h1>Face & Body Treatments</h1>
-        </div>
-    </section>
-    <section class="available-service">
-        <h2>OUR TREATMENTS</h2>
-    </section>
+    <main>
+        <section class="experiences">
+            <h1>Luxury Spa Experiences</h1>
+            <i class="fa-brands fa-envira fa-flip-horizontal fs-2"></i>
+            <p class="fs-4 fst-italic"> Morbi pharetra, quam id consequat imperdiet, lectus est tincidunt massa, eu
+                posuere
+                leo nibh
+                non fermentum
+            </p>
+            <hr>
+            <span>Vestibulum ne velit ante. Praesent dignissim interdum est, in lacinia elit pretium nec. Aliquam erat
+                volutpat.
+                Fusce laoreet mi leo. Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium
+                nec.
+                Aliquam erat volutpat. Fusce laoreet mi leo.
+            </span>
+            <button>OUR APPROACH</button>
+        </section>
+        <section class="emoji-container">
+            <div>
+                <i class="fa-solid fa-hands fa-flip-horizontal emoji-start"></i>
+                <p>Massages</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile emoji-end"></i>
+                <p>Therapy</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart emoji-start"></i>
+                <p>Relaxing</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-moon emoji-end"></i>
+                <p>Meditation</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-snowflake emoji-start"></i>
+                <p>Natural Beauty</p>
+            </div>
+        </section>
+        <section class="treatments-container">
+            <div class="card">
+                <img class="card-img" src="../assets/images/face_and_body_treatments-new.jpg"
+                    alt="face-and-body-treatments">
+            </div>
+            <div class="treatments-plan">
+                <h1>Face & Body Treatments</h1>
+                <p>Pellentesque nec felis efficitur, sagittis eros et, pharetra risus. Sed at lacus a ex imperdiet
+                    disgnissim vehicula quam.
+                    Vestibulum ante ipsum primis.
+                </p>
+                <article class="single-plan">
+                    <div>
+                        <i class="fa-solid fa-square-minus"></i>
+                        <span>Oil Massage</span>
+                    </div>
+                    <p>$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
+                </article>
+                <article class="single-plan">
+                    <div>
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Manicure</span>
+                    </div>
+                    <p>$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
+                </article>
+                <article class="single-plan">
+                    <div>
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Aromatherapy</span>
+                    </div>
+                    <p>$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
+                </article>
+            </div>
+        </section>
+        <section class="available-service">
+            <h2>OUR TREATMENTS</h2>
+        </section>
+    </main>
 </template>
 
 
@@ -59,10 +93,41 @@ export default {
 @use "../styles/partials/mixins.scss" as *;
 @use "../styles/partials/variables" as *;
 
+main {
+    font-family: $main-font;
+}
+
 section.experiences {
     @include flex(column, center, center);
     margin: 0 auto;
     width: 50%;
+    margin-top: 8rem;
+
+    h1 {
+        color: $grey-color;
+        font-size: 73px;
+    }
+
+    i {
+        color: $icon-color;
+        padding: 1.5rem;
+    }
+
+    p {
+        color: $icon-color;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    hr {
+        width: 110px;
+        border: 1px solid $icon-color;
+    }
+
+    span {
+        text-align: center;
+        margin: 2rem 0 3rem 0;
+    }
 
     button {
         border: 2px solid $icon-color;
@@ -70,26 +135,42 @@ section.experiences {
         border-radius: 50px;
         padding: .5rem 2rem;
         background-color: white;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    button:hover {
+        color: #33A7B9;
+        border: 2px solid #33A7B9
     }
 }
+
 
 section.emoji-container {
     @include flex(row, center, center);
     margin: 0 auto;
     width: 70%;
     height: 300px;
-    border: 1px solid black;
+
+    div {
+        @include flex(column, start, center);
+        padding: 3rem;
+
+        p {
+            color: $grey-color;
+            padding: .7rem;
+        }
+    }
 
     .emoji-start {
-        @include flex(column, start, center);
-        width: calc(100% / 3);
         color: $icon-color;
+        font-size: 2.6rem;
+
     }
 
     .emoji-end {
-        @include flex(column, end, center);
-        width: calc(100% / 2);
         color: $icon-color;
+        font-size: 2.6rem;
+        margin-top: 8rem;
     }
 }
 
@@ -98,6 +179,44 @@ section.treatments-container {
     height: 1000px;
     background-color: $treatments-bg-color;
 
+    div.treatments-plan h1 {
+        color: $grey-color;
+        font-size: 60px;
+
+
+    }
+
+    div.treatments-plan {
+        margin: 1rem 6rem;
+        width: 40%;
+
+        p {
+            text-align: left;
+        }
+
+        article.single-plan {
+
+            border: 1px solid $icon-color;
+            background-color: white;
+            width: 40%;
+            margin-bottom: 1.5rem;
+
+
+            i,
+            p {
+                padding: 1rem 0;
+
+            }
+
+            i {
+                color: $icon-color;
+            }
+
+            div {
+                @include flex(row, start, center)
+            }
+        }
+    }
 
     .card {
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
