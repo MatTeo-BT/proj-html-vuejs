@@ -4,8 +4,9 @@
             <p class="fst-italic">"If you want to relax, watch the clouds pass by if you're laying on the grass,
                 or sit in front of the creek; just doing nothing and having those still moments is what really rejuvenates
                 the body..."</p>
+            <span>FRIEDA FRIEDSON, MASSEUSE</span>
         </div>
-        <h5>FRIEDA FRIEDSON, MASSEUSE</h5>
+
     </section>
     <section class="discount">
         <div class="discount-rate">
@@ -13,7 +14,7 @@
             <p>SPECIAL OFFER</p>
         </div>
         <div>
-            <h1 class="fst-italic">Take some time. Treat yourself. You deserve it.</h1>
+            <h2 class="fst-italic">Take some time. Treat yourself. You deserve it.</h2>
             <p>Book a treatment this mont and receive a 25% on all further treatments.</p>
         </div>
         <button class="fw-bold">BOOK NOW</button>
@@ -48,8 +49,9 @@ section.reference {
     text-align: center;
     font-family: $main-font;
 
-    h5 {
+    span {
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
     }
 
     div {
@@ -65,6 +67,18 @@ section.discount {
     width: 100%;
     color: white;
     @include flex(row, center, center);
+
+    div p {
+        padding-top: 1rem;
+        font-size: 17px;
+
+    }
+
+    div h2 {
+        font-family: $main-font;
+
+
+    }
 
     .discount-rate {
         border: 1px solid $icon-color;

@@ -19,23 +19,23 @@
         </section>
         <section class="emoji-container">
             <div>
-                <i class="fa-solid fa-hands fa-flip-horizontal emoji-start"></i>
+                <i class="fa-solid fa-hands fa-flip-horizontal emoji"></i>
                 <p>Massages</p>
             </div>
             <div>
-                <i class="fa-regular fa-face-smile emoji-end"></i>
+                <i class="fa-regular fa-face-smile emoji end"></i>
                 <p>Therapy</p>
             </div>
             <div>
-                <i class="fa-solid fa-heart emoji-start"></i>
+                <i class="fa-solid fa-heart emoji "></i>
                 <p>Relaxing</p>
             </div>
             <div>
-                <i class="fa-regular fa-moon emoji-end"></i>
+                <i class="fa-regular fa-moon emoji end"></i>
                 <p>Meditation</p>
             </div>
             <div>
-                <i class="fa-regular fa-snowflake emoji-start"></i>
+                <i class="fa-regular fa-snowflake emoji"></i>
                 <p>Natural Beauty</p>
             </div>
         </section>
@@ -153,7 +153,7 @@ section.emoji-container {
 
     div {
         @include flex(column, start, center);
-        padding: 3rem;
+        padding: 5rem;
 
         p {
             color: $grey-color;
@@ -161,15 +161,13 @@ section.emoji-container {
         }
     }
 
-    .emoji-start {
+    .emoji {
         color: $icon-color;
-        font-size: 2.6rem;
+        font-size: 3.7rem;
 
     }
 
-    .emoji-end {
-        color: $icon-color;
-        font-size: 2.6rem;
+    .end {
         margin-top: 8rem;
     }
 }

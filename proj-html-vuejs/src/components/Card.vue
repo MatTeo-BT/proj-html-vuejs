@@ -1,6 +1,6 @@
 <template>
     <div class="card-service">
-        <img src="../assets/images/Layer-1-new-400x440.jpg" alt="">
+        <img src="../assets/images/Layer-1-new.jpg" alt="">
         <div class="container">
             <h4>{{ title }}</h4>
             <hr>
@@ -37,7 +37,12 @@ export default {
     ;
 
     .container {
-        padding: 2px 16px;
+        padding: 4rem 1rem;
+
+        p {
+            width: 70%;
+            color: $grey-color;
+        }
 
         h4,
         hr {
@@ -49,6 +54,7 @@ export default {
 
     img {
         width: 100%;
+        height: 90%;
     }
 }
 </style>
