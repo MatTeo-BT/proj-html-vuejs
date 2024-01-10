@@ -32,6 +32,17 @@
             <p>Natural Beauty</p>
         </div>
     </section>
+    <section class="treatments-container">
+        <div class="card">
+            <img class="card-img" src="../assets/images/face_and_body_treatments-new.jpg" alt="face-and-body-treatments">
+        </div>
+        <div class="treatments-plan">
+            <h1>Face & Body Treatments</h1>
+        </div>
+    </section>
+    <section class="available-service">
+        <h2>OUR TREATMENTS</h2>
+    </section>
 </template>
 
 
@@ -80,5 +91,37 @@ section.emoji-container {
         width: calc(100% / 2);
         color: $icon-color;
     }
+}
+
+section.treatments-container {
+    @include flex(row, center, center);
+    height: 1000px;
+    background-color: $treatments-bg-color;
+
+
+    .card {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 550px;
+        height: 80%;
+        @include flex(row, center, center);
+
+        .card-img {
+            width: 88%;
+            height: 90%;
+        }
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+section.available-service {
+    height: 200px;
+    background-image: url(../assets/images/ptb_cta-new.jpg);
+    width: 100%;
+    color: white;
+    @include flex(row, center, center)
 }
 </style>

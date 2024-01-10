@@ -3,6 +3,8 @@
 
   <AppMain />
 
+  <TreatmentsList />
+
   <AppFooter />
 </template>
   
@@ -11,12 +13,13 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-
+import TreatmentsList from './components/TreatmentsList.vue';
 
 export default {
   components: {
     AppHeader,
     AppMain,
+    TreatmentsList,
     AppFooter
   }
 
