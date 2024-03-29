@@ -1,6 +1,7 @@
 <template>
     <section class="service-container">
-        <Card v-for="service in listTreatments" :image="service.img" :title="service.title" :subtitle="service.subtitle" />
+        <Card v-for="service in listTreatments" :immagine="service.img" :title="service.title"
+            :subtitle="service.subtitle" />
     </section>
 </template>
 
@@ -19,42 +20,42 @@ export default {
 
                 },
                 {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/Layer-2-new-400x440.jpg",
                     title: "Massage",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 
                 },
                 {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/Layer-3-new-400x440.jpg",
                     title: "Aromatherapy",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 
                 },
                 {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/Layer-4-new-400x440.jpg",
                     title: "Heat Therapy",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 
                 },
                 {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/Layer-5-new-400x440.jpg",
                     title: "Skin Care",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 
                 },
                 {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/Layer-6-new-400x440.jpg",
                     title: "Spa Days",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 
                 },
                 {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/Layer-7-new-400x440.jpg",
                     title: "Beauty Treatments",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 
                 }, {
-                    img: "/images/Layer-1-new.jpg",
+                    img: "../assets/images/layer8-new-400x440.jpg",
                     title: "Residential",
                     subtitle: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium. Aliquam erat volutpat. Fusce laoreet mi leo."
 

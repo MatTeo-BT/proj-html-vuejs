@@ -11,7 +11,8 @@
             <hr>
             <span>Vestibulum ne velit ante. Praesent dignissim interdum est, in lacinia elit pretium nec. Aliquam erat
                 volutpat.
-                Fusce laoreet mi leo. Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium
+                Fusce laoreet mi leo. Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit
+                pretium
                 nec.
                 Aliquam erat volutpat. Fusce laoreet mi leo.
             </span>
@@ -46,30 +47,31 @@
             </div>
             <div class="treatments-plan">
                 <h1>Face & Body Treatments</h1>
-                <p>Pellentesque nec felis efficitur, sagittis eros et, pharetra risus. Sed at lacus a ex imperdiet
+                <p>Pellentesque nec felis efficitur, sagittis eros et, pharetra risus. <br>
+                    Sed at lacus a ex imperdiet
                     disgnissim vehicula quam.
                     Vestibulum ante ipsum primis.
                 </p>
-                <article class="single-plan">
+                <article class="single-plan p-3">
                     <div>
                         <i class="fa-solid fa-square-minus"></i>
                         <span>Oil Massage</span>
                     </div>
-                    <p>$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
+                    <p class="p-1">$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
                 </article>
-                <article class="single-plan">
+                <article class="single-plan p-3">
                     <div>
                         <i class="fa-solid fa-square-plus"></i>
                         <span>Manicure</span>
                     </div>
-                    <p>$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
+                    <p class="p-1">$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
                 </article>
-                <article class="single-plan">
+                <article class="single-plan p-3">
                     <div>
                         <i class="fa-solid fa-square-plus"></i>
                         <span>Aromatherapy</span>
                     </div>
-                    <p>$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
+                    <p class="p-1">$62 For 2 Hours - Lorem ipsum dolor sit amet</p>
                 </article>
             </div>
         </section>

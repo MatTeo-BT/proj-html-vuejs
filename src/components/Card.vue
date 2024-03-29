@@ -1,6 +1,6 @@
 <template>
     <div class="card-service">
-        <img src="../assets/images/Layer-1-new.jpg" alt="">
+        <img :src="getImagePath(`../assets/${immagine}`)" alt="immagine prodotto">
         <div class="container">
             <h4>{{ title }}</h4>
             <hr>
@@ -14,10 +14,20 @@
 export default {
     name: `Card`,
     props: {
-        img: String,
+        immagine: String,
         title: String,
         subtitle: String
 
+    },
+    data() {
+        return {
+            imageName: 'immagine'
+        };
+    },
+    methods: {
+        getImagePath: function (imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        }
     }
 
 
@@ -34,7 +44,6 @@ export default {
     transition: 0.3s;
     width: calc(100% / 4);
     border: 1px solid white;
-    ;
 
     .container {
         padding: 4rem 1rem;
